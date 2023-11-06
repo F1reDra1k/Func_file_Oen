@@ -20,6 +20,7 @@
 
 # def extract_last_names_from_file(file_name: str) -> list:
 #     last_names =[]
+
 #     with open(file_name, 'r') as file:
 #         for line in file.readlines():
 #             last_name = line.strip().split('\t')[1]
@@ -57,6 +58,7 @@
 
 # def get_dates(file_name: str) -> list:
 #     result = []
+
 #     with open(file_name, 'r') as file:
 #         lines = file.readlines()
 #     for s in lines:
