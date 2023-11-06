@@ -58,7 +58,7 @@
 
 # def get_dates(file_name: str) -> list:
 #     result = []
-
+#
 #     with open(file_name, 'r') as file:
 #         lines = file.readlines()
 #     for s in lines:
