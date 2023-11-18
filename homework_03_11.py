@@ -3,15 +3,15 @@
 # 1. Написати функцію, яка отримує як параметр ім'я файлу назви інтернет доменів (domains.txt)
 # та повертає їх у вигляді списку рядків (назви повертати без крапки).
 
-# def read_domains_from_file(file_name: str) -> list:
-#     with open(file_name, 'r') as file:
-#         domains = [line.strip().replace('.', '') for line in file.readlines()]
-#     return domains
-#
-#
-# name_file = "domains.txt"
-# domain_list = read_domains_from_file(name_file)
-# print(domain_list)
+def read_domains_from_file(file_name: str) -> list:
+    with open(file_name, 'r') as file:
+        domains = [line.strip().replace('.', '') for line in file.readlines()]
+    return domains
+
+
+name_file = "domains.txt"
+domain_list = read_domains_from_file(name_file)
+print(domain_list)
 
 # 2. Написати функцію, яка отримує як параметр ім'я файла (names.txt)
 # і повертає список усіх прізвищ із нього.

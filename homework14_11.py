@@ -1,7 +1,25 @@
 # Написати клас та реалізувати його методи: (основа – ДЗ № 10)
 #
 # 1. Ініціалізація класу з одним параметром – ім'я файлу.
-#
+class FileProcessing:
+    def __init__(self, file_name):
+        self.file_name = file_name
+        self.file_content = []
+
+    def read_file(self):
+        with open(self.file_name, 'r') as file:
+            self.file_content = file.readlines()
+
+    def read_domains_from_file(self):
+        data_from_file = self.read_file(file_content)
+        domain = [line.strip().replace('.', '') for line in data_from_file]
+        return domain
+
+
+file_processor = FileProcessing("domains.txt")
+# file_processor.read_file()
+file_processor.read_domains_from_file()
+print(file_processor.file_content)
 # 2. Написати метод екземпляра класу, який створює атрибут екземпляра класу
 # у вигляді списку рядків (назви повертати без крапки)
 #
